@@ -1,7 +1,8 @@
 ## Instructions for pull requests
 
 1. Structure all the files properly using the design pattern given below
-2. ```
+2. Structure to follow:
+```
     Folder Name (For eg: Project 1)
         css
             All the stylesheets
