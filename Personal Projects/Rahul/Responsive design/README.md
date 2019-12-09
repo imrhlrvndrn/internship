@@ -34,4 +34,4 @@
     - Let me walk you through the code and what it does
     - The first media query checks if the viewport width of the screen is less than or equal to 730px, if yes then apply the styles specified
 
-1. Go through the files and resize the browser to see changes in the layouts without BootStrap. Happy Coding😊😊!
+1. Go through the files and resize the browser to see changes in the layouts without BootStrap. **Happy Coding😊😊!**
