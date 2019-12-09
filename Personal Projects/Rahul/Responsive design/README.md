@@ -1,14 +1,5 @@
 # Simple Responsive design without Bootstrap
 
-## File structure
-
-```
-    index.html
-    css
-        style.css
-    js
-        script.js
-```
 
 1. In this tutorial we'll learn how to make our sites responsive without using any libraries/frameworks like Bootstrap
 1. First of all, we need to understand how Bootstrap works to make sites responsive
