@@ -26,9 +26,9 @@
 
     ```css
         //For smartphones
-        @media screen and (max-width: 730px){code...}
+        @media screen and (max-width: 730px){code}
         //For tablets
-        @media screen and (max-width: 1200px){code...}
+        @media screen and (max-width: 1200px){code}
     ```
 
     - Let me walk you through the code and what it does
