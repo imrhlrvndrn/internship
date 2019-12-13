@@ -1,0 +1,46 @@
+body{
+	margin:0px;
+}
+.heading{
+	background-color: grey;
+}
+.container{
+	background-color: grey;
+	border:2px solid gray;
+}
+.head{
+	text-align:center;
+	color:white;
+	background-color:#424242
+	
+}
+.para{
+	text-align: center;
+	font-family:Sans-serif;
+   line-height:1.7; 
+ 
+   color:white;
+}
+.para4{
+	color:white;
+	font-family: sans-serif;
+}
+.card{
+	background-color: grey;
+}
+.para1{
+	color:white;
+	background-color:grey; 
+	text-align: center;
+	font-family: sans-serif;
+}
+.body1{
+	background-color: grey;
+}
+
+.footer{
+background-color:#333 ;
+color: #fff;
+margin-top:30px;
+padding-top:30px;
+}
