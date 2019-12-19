@@ -6,19 +6,93 @@
 * {
     margin: 0;
     padding: 0;
+    font-size: 1em;
     font-family: "Raleway", sans-serif;
     box-sizing: border-box;
     font-weight: 400;
     color: #eee;
+    text-decoration: none;
+}
+
+input {
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+nav {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(36, 41, 46);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav > .navWrapper {
+    /* min-width: 1250px; */
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navWrapper > .leftNavDiv {
+    display: flex;
+    align-items: center;
+}
+
+.leftNavDiv > svg {
+    margin-right: 20px;
+}
+
+.leftNavDiv * {
+    margin-right: 10px;
+}
+
+.navWrapper a {
+    transition: 0.4s ease-in-out;
+}
+
+.navWrapper a:hover {
+    opacity: 0.5;
+}
+
+.rightNavDiv * {
+    margin-left: 20px;
+}
+
+.rightNavDiv > input {
+    height: 40px;
+    width: 300px;
+    min-width: 250px;
+    background-color: #2b3137;
+    padding: 0 1em;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.rightNavDiv > .navSignup{
+    border: 1px solid #eee;
+    padding: .5em 1em;
+    border-radius: 4px;
 }
 
 .contentWrapper {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     padding: 0 5em;
     display: flex;
     align-items: center;
-    background-color: #201f24;
+    background-color: #2b3137;
+    /* background-color: #201f24; */
+    background-image: url(http://github.githubassets.com/images/modules/site/heroes/simple-codelines.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
     justify-content: space-around;
 }
 
@@ -79,6 +153,11 @@ form > button {
 }
 
 @media screen and (max-width: 1200px) {
+    .navWrapper {
+        width: 97% !important;
+        /* margin: 0 auto; */
+    }
+
     .contentWrapper {
         padding: 0;
     }
