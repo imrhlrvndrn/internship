@@ -9,7 +9,7 @@
             type="image/x-icon"
             class="js-site-favicon"
             href="https://github.githubassets.com/favicon.ico"
-            />
+        />
         <link rel="stylesheet" href="./css/style.css" />
         <link
             href="https://fonts.googleapis.com/css?family=Raleway:400,800&display=swap"
@@ -18,9 +18,11 @@
         <title>GitHub</title>
     </head>
     <body>
+        <!-- Navigation bar -->
         <nav>
             <div class="navWrapper">
                 <div class="leftNavDiv">
+                    <!-- GitHub logo -->
                     <svg
                         height="32"
                         class="octicon octicon-mark-github text-white"
@@ -36,11 +38,135 @@
                         ></path>
                     </svg>
                     <ul>
-                        <a href="http://">Why GitHub?</a>
-                        <a href="http://">Enterprise</a>
-                        <a href="http://">Explore</a>
-                        <a href="http://">Markerplace</a>
-                        <a href="http://">Pricing</a>
+                        <div id="Menu1">
+                            <span class="fadeHoverLinks">Why GitHub?</span>
+                            <div class="dropdownMenu">
+                                <ul>
+                                    <a
+                                        class="boldNavItems"
+                                        href="http://"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Features</a
+                                    >
+                                    <a href="http://" target="_blank" rel="noopener noreferrer"
+                                        >Code review</a
+                                    >
+                                    <a href="http://" target="_blank" rel="noopener noreferrer"
+                                        >Project management</a
+                                    >
+                                    <a href="http://" target="_blank" rel="noopener noreferrer"
+                                        >Integrations</a
+                                    >
+                                    <a href="http://" target="_blank" rel="noopener noreferrer"
+                                        >Actions</a
+                                    >
+                                    <a href="http://" target="_blank" rel="noopener noreferrer"
+                                        >Packages</a
+                                    >
+                                    <a href="http://" target="_blank" rel="noopener noreferrer"
+                                        >Security</a
+                                    >
+                                    <a href="http://" target="_blank" rel="noopener noreferrer"
+                                        >Team management</a
+                                    >
+                                    <a href="http://" target="_blank" rel="noopener noreferrer"
+                                        >Hosting</a
+                                    >
+                                    <hr
+                                        style="margin-bottom: 20px !important;border:none;background-color: #999;height: 1px;"
+                                    />
+                                    <a
+                                        class="boldNavItems"
+                                        href="http://"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Customer stories</a
+                                    >
+                                    <a
+                                        class="boldNavItems"
+                                        href="http://"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Security</a
+                                    >
+                                </ul>
+                            </div>
+                        </div>
+                        <div><a href="http://" class="fadeHoverLinks">Enterprise</a></div>
+                        <div id="Menu2">
+                            <span class="fadeHoverLinks">Explore</span>
+                            <div class="dropdownMenu">
+                                <ul>
+                                    <a
+                                        class="boldNavItems"
+                                        href="http://"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Explore GitHub</a
+                                    >
+                                    <hr
+                                        style="margin-bottom: 20px !important;border:none;background-color: #999;height: 1px;"
+                                    />
+                                    <p class="blankLinks">Learn & contribute</p class="blankLinks">
+                                    <a href="http://" target="_blank" rel="noopener noreferrer"
+                                        >Topics</a
+                                    >
+                                    <a href="http://" target="_blank" rel="noopener noreferrer"
+                                        >Collections</a
+                                    >
+                                    <a href="http://" target="_blank" rel="noopener noreferrer"
+                                        >Trending</a
+                                    >
+                                    <a href="http://" target="_blank" rel="noopener noreferrer"
+                                        >Learning Lab</a
+                                    >
+                                    <a href="http://" target="_blank" rel="noopener noreferrer"
+                                        >Open source guides</a
+                                    >
+                                    <hr
+                                        style="margin-bottom: 20px !important;border:none;background-color: #999;height: 1px;"
+                                    />
+                                    <p class="blankLinks">Connect with others</p>
+                                    <a href="http://" target="_blank" rel="noopener noreferrer"
+                                        >Events</a
+                                    >
+                                    <a href="http://" target="_blank" rel="noopener noreferrer"
+                                        >Community Forum</a
+                                    >
+                                    <a
+                                        class="boldNavItems"
+                                        href="http://"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >GitHub Education</a
+                                    >
+                                    <a
+                                        class="boldNavItems"
+                                        href="http://"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        >Security</a
+                                    >
+                                </ul>
+                            </div>
+                        </div>
+                        <div><a href="http://" class="fadeHoverLinks">Markerplace</a></div>
+                        <div id="Menu3">
+                            <span class="fadeHoverLinks">Pricing</span>
+                            <div class="dropdownMenu"> 
+                                <ul>
+                                    <a class="boldNavItems" href="http://" target="_blank" rel="noopener noreferrer">Plans</a>
+                                    <a  href="http://" target="_blank" rel="noopener noreferrer">Compare Plans</a>
+                                    <a  href="http://" target="_blank" rel="noopener noreferrer">Contact Sales</a>
+                                    <hr
+                                        style="margin-bottom: 20px !important;border:none;background-color: #999;height: 1px;"
+                                    />
+                                    <a  href="http://" target="_blank" rel="noopener noreferrer">Nonprofite</a>
+                                    <a  href="http://" target="_blank" rel="noopener noreferrer">Education</a>
+                                </ul>
+                            </div>
+                        </div>
                     </ul>
                 </div>
 
@@ -52,11 +178,12 @@
                         autocomplete="off"
                         placeholder="Search GitHub"
                     />
-                    <a href="#">Sign in</a>
-                    <a class="navSignup" href="#">Sign up</a>
+                    <a class="fadeHoverLinks" href="#">Sign in</a>
+                    <a class="navSignup fadeHoverLinks" href="#">Sign up</a>
                 </div>
             </div>
         </nav>
+        <!-- Hero div -->
         <div class="contentWrapper">
             <div class="content">
                 <h3>Built for developers.</h3>

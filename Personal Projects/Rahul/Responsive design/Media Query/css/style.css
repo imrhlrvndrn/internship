@@ -1,8 +1,3 @@
-:root {
-    --tablet: 770px;
-    --phone: 360px;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +7,35 @@
     font-weight: 400;
     color: #eee;
     text-decoration: none;
+}
+
+@keyframes fadeInFromTop {
+    0% {
+        opacity: 0.5;
+        top: 90%;
+        transform: scale(0.99);
+    }
+    100% {
+        top: 100%;
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.fadeInFromTop {
+    animation: 0.3s fadeInFromTop ease-in-out forwards;
+}
+
+.boldNavItems {
+    font-weight: 600;
+}
+
+.blankLinks {
+    margin: 0 0 20px 0;
+    opacity: 0.8;
+    font-size: 0.8em;
+    color: #201f24;
+    font-weight: 600;
 }
 
 input {
@@ -29,6 +53,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 10;
 }
 
 nav > .navWrapper {
@@ -54,12 +79,64 @@ nav > .navWrapper {
     margin-right: 10px;
 }
 
-.navWrapper a {
+.leftNavDiv > ul {
+    display: flex;
+}
+
+.leftNavDiv > ul > div {
+    position: relative;
+    height: 50px;
+}
+
+.leftNavDiv > ul > div > a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.leftNavDiv > ul > div > span {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.leftNavDiv > ul > div > .dropdownMenu {
+    position: absolute;
+    background-color: #fff;
+    padding: 1.5em;
+    top: 100%;
+    left: -20%;
+    width: 300px;
+    height: max-content;
+    border-radius: 3px;
+    display: none;
+    transform-origin: top;
+}
+
+.dropdownMenu > ul {
+    margin: 0;
+}
+
+.dropdownMenu > ul > a {
+    color: #201f24;
+    display: block;
+    margin-bottom: 1em;
+    font-size: 0.8em;
+    margin-right: 0;
+    height: 25px;
     transition: 0.4s ease-in-out;
 }
 
-.navWrapper a:hover {
+.dropdownMenu > ul > a:hover {
+    color: blue;
+}
+
+.navWrapper .fadeHoverLinks {
+    transition: 0.4s ease-in-out;
+}
+
+.navWrapper .fadeHoverLinks:hover {
     opacity: 0.5;
+    cursor: pointer;
 }
 
 .rightNavDiv * {
@@ -76,9 +153,9 @@ nav > .navWrapper {
     border-radius: 4px;
 }
 
-.rightNavDiv > .navSignup{
+.rightNavDiv > .navSignup {
     border: 1px solid #eee;
-    padding: .5em 1em;
+    padding: 0.5em 1em;
     border-radius: 4px;
 }
 
@@ -109,6 +186,7 @@ nav > .navWrapper {
 
 .content > p {
     opacity: 0.6;
+    z-index: 0;
 }
 
 .content > .loginBtn {
